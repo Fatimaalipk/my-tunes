@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+section{
+    scroll-margin: 50px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color : rgba(255, 20, 145, 0.996);
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+nav ul li:hover{
+border-bottom: 2px solid white;
+transition: 0.2s ease-in-out;
+}
+.hero-section{
+    background-image:url(IMG/grid-image\(1\).jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    color: white;
+    text-align: center;
+    place-items: center;
+    
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+.music-section{
+    padding-top: 50px;
+    background-color: deeppink;
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.mac-img img{
+    margin: 0 auto;
+    margin-right: 40rem;
+    width: 100%;
+}
+.ipad-iphone-img{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+.secondry-btn{
+    background-color: deeppink;
+    color: white;
+}
+.about-music{
+    margin-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.video-section iframe{
+    height: 800px;
+    width: 1100px;
+ 
+}
+
+
+.video-section{
+    margin-top: 400px;
+    display: grid;
+    place-items: center;
+    color: black;
+    text-align: center;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    gap: 50px;
+
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-upper{
+    background-color: rgb(221, 35, 134);
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom:10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.footer-lower{
+    background-color : rgba(255, 20, 145, 0.996);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+@media(max-width:768px){
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header{
+        background-color : rgba(255, 20, 145, 0.996);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    }
+    .logo{
+       display: none;
+    }
+    button{
+        padding: 10px 15px;
+        border: none;
+        transition: 0.2s ease-in-out;
+    }
+    button:hover{
+        opacity: 0.8;
+        transition: 0.2s ease-in-out; 
+    }
+    nav{
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    nav ul{
+        display: flex;
+        gap: 30px;
+    }
+    nav ul li{
+        border-bottom: 2px solid transparent;
+        transition: 0.2s ease-in-out;
+    }
+    nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+    }
+    .hero-section{
+        background-image:url(IMG/grid-image\(1\).jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        color: white;
+        text-align: center;
+        place-items: center;
+        
+    }
+    .hero-section .container{
+
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero-section h1{
+        font-size: 32px;
+    }
+    .container h3{
+        font-size: 15px;
+       
+    }
+   .hero-section h4{
+        font-size: 20px;
+    }
+    .primary-btn{
+    padding: 5px 3px;
+    }
+    .music-section{
+        padding-top: 30px;
+        background-color: deeppink;
+    }
+    .music-section h4{
+        font-size: 15px;
+        padding: 20px;
+    }
+    .music-section .container{
+        /* display: flex; */
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .about-music img{
+        width: 100%;
+    }
+    .mac-img img{
+        margin: 0 auto;
+        padding: 30px;
+width: 100%;
+    }
+    .about-music p{
+     margin: 0 auto;
+       text-align: center;
+        padding: 30px;
+        color: grey;
+        font-size: 15px;
+    }
+    .about-music{
+        margin-top: 500px;
+        display: grid;
+        place-items: center;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 3px;
+    } 
+    .ipad-iphone-img img{
+     
+        width: 100%;
+        padding: 30px;
+        margin: 0 auto;
+       margin-bottom: 13rem;
+    }
+    .ipad-iphone-img{
+        margin-top: -400px;
+        position: relative;
+        top: 400px;
+    }
+    .secondry-btn{
+        background-color: deeppink;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-right: 14rem;
+        padding: 5px 5px;
+        
+    }
+    .about-music{
+        margin-top: 200px;
+        display: grid;
+        place-items: center;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .video-section iframe{
+        height: 300px;
+        width: 400px;
+        padding: 20px;
+     
+    }
+    
+    
+    .video-section{
+        margin-top: 200px;
+        display: grid;
+        place-items: center;
+        color: black;
+        text-align: center;
+    }
+    .video-section .container{
+        /* display: flex; */
+        flex-direction: column;
+        gap: 30px;
+        margin-top: -200px;
+    }
+    .gift-section{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        /* gap: 50px; */
+    
+    }
+    .gift-content h3{
+        color: deeppink;
+        margin-left: 10rem;
+        padding-right: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .gift-card img{
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px;
+    }
+    .gift-content{
+        /* display: flex; */
+        flex-direction: column;
+        gap: 10px;
+    }
+     .secondry-btn{
+        background-color: deeppink;
+        margin: 0 auto;
+        margin-left: 11rem;
+    
+        
+     }
+     
+    .gift-content p{
+        padding: 20px;
+        margin: 0 auto;
+        color: gray;
+        font-size: 15px;
+       
+    }
+
+     
+    .footer-upper{
+        background-color: rgb(221, 35, 134);
+        padding: 20px;
+    }
+    .footer-upper .container{
+        /* display: flex; */
+        color: white;
+        justify-content: space-between;
+    }
+    .footer-upper h4{
+        padding-bottom:10px;
+        border-bottom: 2px solid white;
+        margin-bottom: 10px;
+    }
+    .footer-lower{
+        background-color : rgba(255, 20, 145, 0.996);
+        padding: 20px;
+        text-align: center;
+        color: white;  
+}
+}
